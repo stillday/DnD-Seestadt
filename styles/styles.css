@@ -151,6 +151,7 @@ body {
 
 .image-wrapper img {
   object-fit: contain;
+  height: 100%;
 }
 
 /* ********** */
