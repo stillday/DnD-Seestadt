@@ -1,8 +1,209 @@
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>D&D Seestadt</title>
+
+    <script>
+      function showCampaign(i) {
+        [...document.getElementsByClassName("campaign")].forEach((c) =>
+          c.classList.remove("show")
+        );
+
+        document.getElementById(`campaign-${i}`)?.classList.add("show");
+      }
+    </script>
   </head>
   <body>
-    D&D Seestadt
+    <div id="page">
+      <div id="header">
+        <h1>D&D Seestadt</h1>
+      </div>
+      <div id="navigation">
+        <input
+          id="tab-1"
+          type="radio"
+          name="tabs"
+          checked
+          onclick="showCampaign(1)"
+        />
+        <label for="tab-1">Arovin: The Curse of the Elves</label>
+
+        <input id="tab-2" type="radio" name="tabs" onclick="showCampaign(2)" />
+        <label for="tab-2">Wildemount: The Breaker of Chains</label>
+      </div>
+      <div id="content">
+        <div id="campaign-1" class="campaign show">
+          <h2>Arovin: The Curse of the Elves</h2>
+
+          <h3>The Party</h3>
+          <div class="characters">
+            <div class="character jamil">
+              <h4>
+                Jamil
+                <a href="https://www.dndbeyond.com/characters/59057784"></a>
+              </h4>
+              <p class="class">Vengeance Paladin 6 | Storm Sorcerer 2</p>
+              <div class="image-wrapper">
+                <img src="images/jamil.png" />
+              </div>
+              <div class="attributes">
+                <div class="attribute-shield">STR<hr>18</div>
+                <div class="attribute-shield">DEX<hr>10</div>
+                <div class="attribute-shield">CON<hr>16</div>
+                <div class="attribute-shield">INT<hr>10</div>
+                <div class="attribute-shield">WIS<hr>10</div>
+                <div class="attribute-shield">CHA<hr>16</div>
+              </div>
+              <h5>Signature Items</h5>
+              <div class="items">
+                <div class="item">
+                  <h6>Glaive of the Revenant King</h6>
+                  <div class="image-wrapper">
+                    <img src="images/jamil-item1.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Crown of Storms</h6>
+                  <div class="image-wrapper">
+                    <img src="images/jamil-item2.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Mourningsteal Demi-Gauntlets</h6>
+                  <div class="image-wrapper">
+                    <img src="images/jamil-item3.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="character holla">
+              <h4>
+                Hollasthra
+                <a href="https://www.dndbeyond.com/characters/45829145"></a>
+              </h4>
+              <p class="class">Gloom Stalker Ranger 8</p>
+              <div class="image-wrapper">
+                <img src="images/holla.png" />
+              </div>
+              <div class="attributes">
+                <div class="attribute-shield">STR<hr>11</div>
+                <div class="attribute-shield">DEX<hr>20</div>
+                <div class="attribute-shield">CON<hr>12</div>
+                <div class="attribute-shield">INT<hr>11</div>
+                <div class="attribute-shield">WIS<hr>16</div>
+                <div class="attribute-shield">CHA<hr>10</div>
+              </div>
+              <h5>Signature Items</h5>
+              <div class="items">
+                <div class="item">
+                  <h6>Dryad's Gift</h6>
+                  <div class="image-wrapper">
+                    <img src="images/holla-item1.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Finur's Mantle</h6>
+                  <div class="image-wrapper">
+                    <img src="images/holla-item2.webp" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Ulram's Cloak</h6>
+                  <div class="image-wrapper">
+                    <img src="images/holla-item3.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="character valduriel">
+              <h4>
+                Valduriel
+                <a href="https://www.dndbeyond.com/characters/45765502"></a>
+              </h4>
+              <p class="class">Ancients Barbarian 6 | Fighter 2</p>
+              <div class="image-wrapper">
+                <img src="images/valduriel.jpeg" />
+              </div>
+              <div class="attributes">
+                <div class="attribute-shield">STR<hr>20</div>
+                <div class="attribute-shield">DEX<hr>14</div>
+                <div class="attribute-shield">CON<hr>16</div>
+                <div class="attribute-shield">INT<hr>10</div>
+                <div class="attribute-shield">WIS<hr>11</div>
+                <div class="attribute-shield">CHA<hr>8</div>
+              </div>
+              <h5>Signature Items</h5>
+              <div class="items">
+                <div class="item">
+                  <h6>Flame-Tongue Phase Axe</h6>
+                  <div class="image-wrapper">
+                    <img src="images/valduriel-item1.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Dead Ringer</h6>
+                  <div class="image-wrapper">
+                    <img src="images/valduriel-item2.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Phantom Walkers</h6>
+                  <div class="image-wrapper">
+                    <img src="images/valduriel-item3.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="character virdan">
+              <h4>
+                Virdan
+                <a href="https://www.dndbeyond.com/characters/45963792"></a>
+              </h4>
+              <p class="class">Arcane Trickster Rogue 8</p>
+              <div class="image-wrapper">
+                <img src="images/virdan.jpeg" />
+              </div>
+              <div class="attributes">
+                <div class="attribute-shield">STR<hr>8</div>
+                <div class="attribute-shield">DEX<hr>20</div>
+                <div class="attribute-shield">CON<hr>16</div>
+                <div class="attribute-shield">INT<hr>20</div>
+                <div class="attribute-shield">WIS<hr>10</div>
+                <div class="attribute-shield">CHA<hr>10</div>
+              </div>
+              <h5>Signature Items</h5>
+              <div class="items">
+                <div class="item">
+                  <h6>Spellfire Bow</h6>
+                  <div class="image-wrapper">
+                    <img src="images/virdan-item1.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Couatl Herald's Radiance</h6>
+                  <div class="image-wrapper">
+                    <img src="images/virdan-item2.png" />
+                  </div>
+                </div>
+                <div class="item">
+                  <h6>Myceliaweave Armor</h6>
+                  <div class="image-wrapper">
+                    <img src="images/virdan-item3.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="campaign-2" class="campaign">
+          <h2>Wildemount: The Breaker of Chains</h2>
+          <p>TODO</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
