@@ -1,5 +1,5 @@
 :root {
-  --content-background-color: white;
+  --content-background-color: #eed;
 }
 
 /* ****** */
@@ -7,7 +7,7 @@
 /* ****** */
 
 body {
-  background-color: blanchedalmond;
+  background-color: #333;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,6 +25,7 @@ body {
 
 #header {
   text-align: center;
+  color: #f42;
 }
 
 #header h1 {
@@ -106,6 +107,7 @@ body {
   flex: 1;
   border-radius: 5px;
   padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .character h4 {
@@ -152,6 +154,7 @@ body {
 .image-wrapper img {
   object-fit: contain;
   height: 100%;
+  filter: drop-shadow(2px 2px 3px #222);
 }
 
 /* ********** */
@@ -165,8 +168,8 @@ body {
 }
 
 .attribute-shield hr {
-    border-top: 1px solid #333;
-    margin-bottom: 4px;
+  border-top: 1px solid #333;
+  margin-bottom: 4px;
 }
 
 .attribute-shield {
