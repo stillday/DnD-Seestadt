@@ -96,6 +96,7 @@ body {
 .characters {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .character {
